@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             BackgroundColor="White"
+             x:Class="ScaryahSoft.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Start" >
+            <StackLayout>
+                <Image Margin="20" Source="logo300" WidthRequest="180" HeightRequest="180"></Image>
+            </StackLayout>
+            <StackLayout  HorizontalOptions="StartAndExpand"  VerticalOptions="StartAndExpand" BackgroundColor="Black">
+                <Label Text="Datos de acceso:" Margin="20" FontAttributes="Bold" HorizontalOptions="Center" TextColor="White"></Label>
+                <Entry WidthRequest="400" Margin="10,50,10,0" TextColor="Navy" Placeholder="Email"></Entry>
+                <Entry WidthRequest="400" Margin="10,50,10,0" IsPassword="True" TextColor="Navy" Placeholder="Password"></Entry>
+                <Button  Margin="10,50,10,50" HeightRequest="35"  BackgroundColor="#399FC5" FontAttributes="Bold" TextColor="Black" Text="Login"></Button>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center" Orientation="Horizontal">
+                <Button Margin="0,0,50,0" VerticalOptions="Start" Clicked="Button_Clicked"  TextColor="#399FC5" FontSize="Small"  FontAttributes="Bold" Text="Registrarme"></Button>
+                <Button Margin="50,0,0,0" VerticalOptions="Start" TextColor="#399FC5" FontSize="Small" FontAttributes="Bold" Text="Olvide mi clave..."></Button>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="End">
+                <Button Margin="10,15,10,0" HorizontalOptions="Center" FontSize="Micro" TextColor="Navy" Text="© Derechos Reservados Scaryah-Soft 2019"></Button>
+                <Label VerticalOptions="Start" HorizontalOptions="Center" FontSize="Micro" TextColor="Navy" Text="Empresa 100% Veracruzana"></Label>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

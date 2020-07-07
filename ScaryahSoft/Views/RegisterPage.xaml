@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="Registro"
+             mc:Ignorable="d"
+             
+             x:Class="ScaryahSoft.Views.RegisterPage">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout HorizontalOptions="StartAndExpand" >
+                <Button HorizontalOptions="End" Text="Cancelar" Clicked="Button_Clicked"></Button>
+            <StackLayout>
+                <Image  Source="logo300" Margin="5" WidthRequest="200" HeightRequest="200"></Image>
+            </StackLayout>
+            <StackLayout HorizontalOptions="Center">
+                <Label HorizontalOptions="Center"  Text="Seleccionar una imagen"></Label>
+                <Image HorizontalOptions="Center" Margin="5" Source="noone" WidthRequest="120" HeightRequest="110"></Image>
+            </StackLayout>
+                <StackLayout  Margin="10,0,0,0"  HorizontalOptions="Center"  BackgroundColor="White">
+                <Label Text="Llene el formulario con su Informacion:" Margin="10"  HorizontalOptions="Center" TextColor="Black"></Label>
+                    <Entry WidthRequest="390"  TextColor="Black" Placeholder="Nombre completo"></Entry>
+                    <Entry WidthRequest="390"  Margin="2"  TextColor="Black" Placeholder="Correo"></Entry>
+                    <Entry WidthRequest="390" Keyboard="Numeric"   TextColor="Black" Placeholder="Telefono"></Entry>
+                    <Entry WidthRequest="390" Keyboard="Numeric"  TextColor="Black" Placeholder="Password "></Entry>
+                    <Entry WidthRequest="390" Keyboard="Numeric"   TextColor="Black" Placeholder="Confirme Password"></Entry>
+                <Label Margin="7,10,0,0"    Text="Ver Password"> </Label>
+                <Switch Margin="150,-30,0,0" IsToggled="False"></Switch>
+
+                <Button  Margin="10,15,10,50" HeightRequest="35"  BackgroundColor="#399FC5" FontAttributes="Bold" TextColor="White" Text="Registrarme"></Button>
+            </StackLayout>
+        </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
