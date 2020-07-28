@@ -22,7 +22,7 @@ namespace ScaryahSoft.Views
             //nr.navigation = Navigation;
             //this.BindingContext = nr;
 
-            NP = new NavigationPage(new LoginPage());
+            //NP = new NavigationPage(new LoginPage());
 
 
 
